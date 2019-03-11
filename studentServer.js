@@ -167,6 +167,7 @@ app.get('/getGeoJSON/:tablename/:geomcolumn/:portNumber?', function (req,res) {
         }
         thecolnames = result.rows[0].string_agg;
         colnames = thecolnames;
+        console.log(colnames)
         console.log("the colnames "+thecolnames);
         // now use the inbuilt geoJSON functionality
         // and create the required geoJSON format using a query adapted from here:
